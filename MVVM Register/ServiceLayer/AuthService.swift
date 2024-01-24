@@ -15,12 +15,12 @@ protocol AuthServiceProtocol: AnyObject {
 class AuthService: AuthServiceProtocol {
     
     func login(email: String, password: String, completion: @escaping (Bool) -> Void) {
-        let success = MockDB.shared.checkCredentials(of: User(email: email, password: password))
+        let success = FakeDB.shared.checkCredentials(of: User(email: email, password: password))
         completion(success)
     }
     
     func register(email: String, password: String, completion: @escaping (Bool) -> Void) {
-        MockDB.shared.register(user: User(email: email, password: password))
+        FakeDB.shared.register(user: User(email: email, password: password))
         completion(true)
     }
     
