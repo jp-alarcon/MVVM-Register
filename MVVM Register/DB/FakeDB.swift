@@ -7,9 +7,9 @@
 
 import Foundation
 
-class MockDB {
+class FakeDB {
     
-    static let shared = MockDB()
+    static let shared = FakeDB()
     
     var users: [User]
     
