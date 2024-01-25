@@ -12,14 +12,19 @@ class WelcomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = "Welcome"
-        
+        checkSession()
+        screenInitialSetup()
+    }
+    
+    func checkSession() {
         if SessionManager.shared.isLoggedIn {
             self.performSegue(withIdentifier: SegueConstants.welcomeToHome, sender: nil)
         }
-        // Do any additional setup after loading the view.
     }
-
+    
+    func screenInitialSetup() {
+        self.title = ScreenTitles.welcomeTitle
+    }
 
 }
 

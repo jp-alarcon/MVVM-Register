@@ -18,15 +18,17 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.title = "Log in"
+        screenInitialSetup()
+    }
+    
+    func screenInitialSetup() {
+        self.title = ScreenTitles.loginTitle
+        
         loginButton.isEnabled = false
         
         emailTextField.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
         passwordTextField.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
     }
-    
-    
-    
     
     @IBAction func loginTapped(_ sender: UIButton) {
         loginViewModel.loginUser(email: emailTextField.text!, password: passwordTextField.text!) { [weak self] success in
@@ -39,7 +41,6 @@ class LoginViewController: UIViewController {
             }
         }
     }
-    
 
 }
 

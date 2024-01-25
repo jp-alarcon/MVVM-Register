@@ -8,8 +8,10 @@
 import Foundation
 
 protocol AuthServiceProtocol: AnyObject {
+    
     func login(email: String, password: String, completion: @escaping (Bool) -> Void)
     func register(email: String, password: String, completion: @escaping (Bool) -> Void)
+    
 }
 
 class AuthService: AuthServiceProtocol {
@@ -23,6 +25,5 @@ class AuthService: AuthServiceProtocol {
         FakeDB.shared.register(user: User(email: email, password: password))
         completion(true)
     }
-    
     
 }

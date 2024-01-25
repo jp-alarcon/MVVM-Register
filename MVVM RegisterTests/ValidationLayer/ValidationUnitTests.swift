@@ -24,7 +24,7 @@ final class ValidationUnitTests: XCTestCase {
         validation = nil
     }
 
-    func testIsValidEmail_ValidEmail_ReturnsTrue() {
+    func test_IsValidEmail_ValidEmail_ReturnsTrue() {
         
         // Arrange
         let email = "test@email.com"
@@ -37,7 +37,7 @@ final class ValidationUnitTests: XCTestCase {
         
     }
     
-    func testIsValidEmail_InvalidEmail_ReturnsFalse() {
+    func test_IsValidEmail_InvalidEmail_ReturnsFalse() {
         
         // Arrange
         let email = "testemail.com"
@@ -50,7 +50,7 @@ final class ValidationUnitTests: XCTestCase {
         
     }
     
-    func testIsValidPassword_ValidPassword_ReturnsTrue() {
+    func test_IsValidPassword_ValidPassword_ReturnsTrue() {
         
         
         // Arrange
@@ -64,7 +64,7 @@ final class ValidationUnitTests: XCTestCase {
         
     }
     
-    func testIsValidPassword_InvalidPassword_ReturnsFalse() {
+    func test_IsValidPassword_InvalidPassword_ReturnsFalse() {
         
         // Arrange
         let password = "abc"

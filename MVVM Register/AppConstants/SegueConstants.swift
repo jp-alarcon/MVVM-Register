@@ -8,7 +8,9 @@
 import Foundation
 
 struct SegueConstants {
+    
     static let registerToLogin = "RegisterToLogin"
     static let loginToHome = "LoginToHome"
     static let welcomeToHome = "WelcomeToHome"
+    
 }

@@ -8,6 +8,7 @@
 import UIKit
 
 class ReplaceSegue: UIStoryboardSegue {
+    
     override func perform() {
         guard let navigationController = source.navigationController else {
             return
@@ -19,4 +20,5 @@ class ReplaceSegue: UIStoryboardSegue {
         
         navigationController.setViewControllers(controllerStack, animated: true)
     }
+    
 }

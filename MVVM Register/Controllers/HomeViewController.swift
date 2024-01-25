@@ -14,7 +14,11 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = "Home"
+        screenInitialSetup()
+    }
+    
+    func screenInitialSetup() {
+        self.title = ScreenTitles.homeTitle
         self.navigationItem.hidesBackButton = true
     }
     

@@ -24,4 +24,5 @@ class LoginViewModel {
     func validate(email: String, password: String) -> Bool{
         return validation.isValidEmail(email) && validation.isValidPassword(password)
     }
+    
 }

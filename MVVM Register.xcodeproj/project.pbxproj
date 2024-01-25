@@ -21,6 +21,8 @@
 		4358ECDE2B5B54110044AF81 /* FakeDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4358ECDD2B5B54110044AF81 /* FakeDB.swift */; };
 		4358ECE02B5B54560044AF81 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4358ECDF2B5B54560044AF81 /* User.swift */; };
 		435BCA982B617B6200DD6972 /* MockAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435BCA972B617B6200DD6972 /* MockAuthService.swift */; };
+		435BCA9A2B61BD9A00DD6972 /* RegExConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435BCA992B61BD9A00DD6972 /* RegExConstants.swift */; };
+		435BCA9C2B61CC0000DD6972 /* ScreenTitles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435BCA9B2B61CC0000DD6972 /* ScreenTitles.swift */; };
 		436CFB212B59CC66001F4016 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436CFB202B59CC66001F4016 /* AppDelegate.swift */; };
 		436CFB232B59CC66001F4016 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436CFB222B59CC66001F4016 /* SceneDelegate.swift */; };
 		436CFB252B59CC66001F4016 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436CFB242B59CC66001F4016 /* WelcomeViewController.swift */; };
@@ -69,6 +71,8 @@
 		4358ECDD2B5B54110044AF81 /* FakeDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeDB.swift; sourceTree = "<group>"; };
 		4358ECDF2B5B54560044AF81 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		435BCA972B617B6200DD6972 /* MockAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAuthService.swift; sourceTree = "<group>"; };
+		435BCA992B61BD9A00DD6972 /* RegExConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegExConstants.swift; sourceTree = "<group>"; };
+		435BCA9B2B61CC0000DD6972 /* ScreenTitles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenTitles.swift; sourceTree = "<group>"; };
 		436CFB1D2B59CC66001F4016 /* MVVM Register.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM Register.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		436CFB202B59CC66001F4016 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		436CFB222B59CC66001F4016 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -239,6 +243,8 @@
 			children = (
 				436CFB432B59EBBB001F4016 /* SegueConstants.swift */,
 				43509F612B5CD6D30089121B /* UserDefaultKeys.swift */,
+				435BCA992B61BD9A00DD6972 /* RegExConstants.swift */,
+				435BCA9B2B61CC0000DD6972 /* ScreenTitles.swift */,
 			);
 			path = AppConstants;
 			sourceTree = "<group>";
@@ -451,6 +457,7 @@
 				436CFB4A2B59FF5D001F4016 /* Validation.swift in Sources */,
 				4358ECE02B5B54560044AF81 /* User.swift in Sources */,
 				436CFB212B59CC66001F4016 /* AppDelegate.swift in Sources */,
+				435BCA9C2B61CC0000DD6972 /* ScreenTitles.swift in Sources */,
 				436CFB472B59FCC4001F4016 /* RegisterViewModel.swift in Sources */,
 				436CFB232B59CC66001F4016 /* SceneDelegate.swift in Sources */,
 				436CFB402B59EB02001F4016 /* LoginViewController.swift in Sources */,
@@ -458,6 +465,7 @@
 				436CFB352B59D2F1001F4016 /* RegisterViewController.swift in Sources */,
 				43509F652B5DFDF70089121B /* SessionManager.swift in Sources */,
 				436CFB422B59EB10001F4016 /* HomeViewController.swift in Sources */,
+				435BCA9A2B61BD9A00DD6972 /* RegExConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

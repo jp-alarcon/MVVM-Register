@@ -16,18 +16,54 @@ final class RegisterViewModelUnitTests: XCTestCase {
     override func setUp() {
         super.setUp()
         
-        
+        mockAuthService = MockAuthService()
+        viewModel = RegisterViewModel(authService: mockAuthService, validation: Validation())
     }
     
     override func tearDown() {
         super.tearDown()
+        
+        mockAuthService = nil
+        viewModel = nil
     }
 
-    func testRegisterUser_Success(){
+    func test_RegisterUser_Success(){
+        
+        // Arrange
+        mockAuthService.shouldSucced = true
+        let email = "test@email.com"
+        let password = "abcd1234"
+        let expectation = XCTestExpectation()
+        
+        // Act
+        mockAuthService.register(email: email, password: password) { success in
+            // Assert
+            XCTAssertTrue(success)
+            expectation.fulfill()
+        }
+        
+        // Wait
+        wait(for: [expectation], timeout: 5.0)
         
     }
     
-    func testRegisterUser_Fail(){
+    func test_RegisterUser_Fail(){
+        
+        // Arrange
+        mockAuthService.shouldSucced = false
+        let email = "test@email.com"
+        let password = "abcd1234"
+        let expectation = XCTestExpectation()
+        
+        // Act
+        mockAuthService.register(email: email, password: password) { success in
+            // Assert
+            XCTAssertFalse(success)
+            expectation.fulfill()
+        }
+        
+        // Wait
+        wait(for: [expectation], timeout: 5.0)
         
     }
 

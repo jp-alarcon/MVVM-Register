@@ -18,13 +18,17 @@ class RegisterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.title = "Register"
+        screenInitialSetup()
+    }
+    
+    func screenInitialSetup() {
+        self.title = ScreenTitles.registerTitle
+        
         registerButton.isEnabled = false
         
         emailTextField.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
         passwordTextField.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
     }
-    
     
     @IBAction func registerTapped(_ sender: UIButton) {
         registerViewModel.registerUser(email: emailTextField.text!, password: passwordTextField.text!) { [weak self] success in
@@ -51,7 +55,6 @@ extension RegisterViewController: UITextFieldDelegate {
         case false:
             registerButton.isEnabled = false
         }
-        
     }
     
 }
